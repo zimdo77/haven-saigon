@@ -3,6 +3,7 @@ export default function Home() {
     <div>
       <h1>HAVEN Saigon</h1>
       <p>Serviced Apartments in Ho Chi Minh City</p>
+      <div className="h-200 w-200"></div>
     </div>
   );
 }

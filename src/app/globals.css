@@ -12,7 +12,7 @@ html {
 
 @theme inline {
   /* Fonts */
-  --font-heading: var(--font-cormorant);
+  --font-serif: var(--font-cormorant);
   --font-sans: var(--font-inter);
 
   /* HAVEN colours */

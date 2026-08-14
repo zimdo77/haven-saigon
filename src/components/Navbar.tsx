@@ -14,7 +14,7 @@ import {
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <header className="sticky top-0 z-50 bg-olive text-cream border-b border-cream/20 shadow-sm">
+    <header className="sticky top-0 z-50 bg-olive text-cream border-b border-border/20 shadow-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 font-sans">
         <Link href="/">
           <Image
@@ -100,11 +100,11 @@ export default function Navbar() {
 
           <SheetContent
             side="right"
-            className="w-[85%] max-w-sm border-l border-cream bg-olive px-0 text-cream"
+            className="w-[85%] max-w-sm border-l border-border/50 bg-olive px-0 text-cream"
           >
             <div className="flex h-full flex-col">
               {/* Mobile menu header */}
-              <div className="border-b border-border px-6 pb-6 pt-10">
+              <div className="border-b border-border/50 px-6 pb-6 pt-10">
                 <Image
                   src="/logo/haven-logo.png"
                   alt="HAVEN Saigon"
@@ -125,8 +125,8 @@ export default function Navbar() {
                   render={
                     <Link
                       href="/"
-                      className={`border-b border-border py-5 text-lg tracking-wide transition-colors hover:text-cream/60 ${
-                        pathname === "/" ? "font-bold text-white" : ""
+                      className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
+                        pathname === "/" ? "font-medium text-white" : ""
                       }`}
                     />
                   }
@@ -139,8 +139,8 @@ export default function Navbar() {
                   render={
                     <Link
                       href="/about"
-                      className={`border-b border-border py-5 text-lg tracking-wide transition-colors hover:text-cream/60 ${
-                        pathname === "/about" ? "font-bold text-white" : ""
+                      className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
+                        pathname === "/about" ? "font-medium text-white" : ""
                       }`}
                     />
                   }
@@ -153,9 +153,9 @@ export default function Navbar() {
                   render={
                     <Link
                       href="/rooms"
-                      className={`border-b border-border py-5 text-lg tracking-wide transition-colors hover:text-cream/60 ${
+                      className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
                         pathname.startsWith("/rooms")
-                          ? "font-bold text-white"
+                          ? "font-medium text-white"
                           : ""
                       }`}
                     />
@@ -169,8 +169,10 @@ export default function Navbar() {
                   render={
                     <Link
                       href="/facilities"
-                      className={`border-b border-border py-5 text-lg tracking-wide transition-colors hover:text-cream/60 ${
-                        pathname === "/facilities" ? "font-bold text-white" : ""
+                      className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
+                        pathname === "/facilities"
+                          ? "font-medium text-white"
+                          : ""
                       }`}
                     />
                   }
@@ -183,8 +185,8 @@ export default function Navbar() {
                   render={
                     <Link
                       href="/gallery"
-                      className={`border-b border-border py-5 text-lg tracking-wide transition-colors hover:text-cream/60 ${
-                        pathname === "/gallery" ? "font-bold text-white" : ""
+                      className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
+                        pathname === "/gallery" ? "font-medium text-white" : ""
                       }`}
                     />
                   }
@@ -197,8 +199,8 @@ export default function Navbar() {
                   render={
                     <Link
                       href="/contact"
-                      className={`border-b border-border py-5 text-lg tracking-wide transition-colors hover:text-cream/60 ${
-                        pathname === "/contact" ? "font-bold text-white" : ""
+                      className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
+                        pathname === "/contact" ? "font-medium text-white" : ""
                       }`}
                     />
                   }
