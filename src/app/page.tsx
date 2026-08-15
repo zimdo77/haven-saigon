@@ -7,10 +7,10 @@ import RoomCard from "@/components/RoomCard";
 import { rooms } from "@/data/rooms";
 import SectionHeading from "@/components/SectionHeading";
 
-export default function Home() {
-  // Displays exactly in order
-  const featuredRoomSlugs = ["chamomile", "peppermint", "rose-oolong"];
+// Displays exactly in order
+const featuredRoomSlugs = ["chamomile", "peppermint", "rose-oolong"];
 
+export default function Home() {
   const featuredRooms = featuredRoomSlugs
     .map((slug) => rooms.find((room) => room.slug === slug))
     .filter((room) => room !== undefined);
@@ -117,8 +117,31 @@ export default function Home() {
         href="/facilities"
         linkText="Explore Facilities"
         imagePosition="right"
-        eager
       />
+
+      {/* CONTACT CTA SECTION */}
+      <section className="bg-white">
+        <Container className="py-20 text-center">
+          <p className="text-sm uppercase tracking-[0.2em] text-olive/60">
+            Get in Touch
+          </p>
+
+          <h2 className="mt-3 font-serif text-4xl font-medium md:text-5xl">
+            Make HAVEN Your Home in Saigon
+          </h2>
+
+          <p className="mx-auto mt-5 max-w-xl leading-relaxed text-olive/70">
+            Have a question or want to check availability? Get in touch and
+            we’ll help you find the right apartment.
+          </p>
+
+          <div className="mt-8">
+            <ButtonLink href="/contact" variant="primary">
+              Contact Us
+            </ButtonLink>
+          </div>
+        </Container>
+      </section>
     </>
   );
 }
