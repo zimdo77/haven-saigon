@@ -17,6 +17,7 @@ export default function Home() {
 
   return (
     <>
+      {/* HERO SECTION */}
       <section className="relative min-h-[70vh] md:min-h-[80vh] overflow-hidden">
         <Image
           src="/images/home/hero.jpg"
@@ -54,6 +55,7 @@ export default function Home() {
         </Container>
       </section>
 
+      {/* ABOUT PREVIEW SECTION */}
       <SectionPreview
         eyebrow="About HAVEN"
         title="A Calmer Way to Live in Saigon"
@@ -65,6 +67,7 @@ export default function Home() {
         eager
       />
 
+      {/* ROOMS PREVIEW SECTION */}
       <section className="bg-white">
         <Container className="py-20">
           <div className="flex items-end justify-between gap-6">
@@ -103,6 +106,19 @@ export default function Home() {
           </div>
         </Container>
       </section>
+
+      {/* FACILITIES PREVIEW SECTION */}
+      <SectionPreview
+        eyebrow="Facilities"
+        title="Everything You Need, Close to Home"
+        description="Enjoy everyday convenience with on-site facilities including a swimming pool, gym, and rooftop terrace."
+        imageSrc="/images/facilities/pool1.jpg"
+        imageAlt="Facilities at HAVEN Saigon"
+        href="/facilities"
+        linkText="Explore Facilities"
+        imagePosition="right"
+        eager
+      />
     </>
   );
 }
