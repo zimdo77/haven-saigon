@@ -30,13 +30,13 @@ export default function Home() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/30 to-transparent" />
 
-        <Container className="relative flex min-h-[70vh] md:min-h-[80vh] items-center">
+        <Container className="relative flex min-h-[70vh] md:min-h-[80vh] items-center py-16 md:py-20">
           <div className="max-w-2xl text-white">
             <p className="mb-4 text-sm uppercase tracking-[0.2em]">
               Serviced Apartments in Thảo Điền
             </p>
 
-            <h1 className="font-serif text-5xl font-medium leading-tight md:text-7xl">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-medium leading-tight">
               Stay Your Way. <br />
               Feel at Home.
             </h1>
@@ -65,25 +65,26 @@ export default function Home() {
         href="/about"
         linkText="Learn More"
         eager
+        background="cream"
       />
 
       {/* ROOMS PREVIEW SECTION */}
       <section className="bg-white">
-        <Container className="py-20">
+        <Container className="py-16 md:py-20">
           <div className="flex items-end justify-between gap-6">
             <SectionHeading
               title="Find a Space That Suits Your Stay"
               subtitle="Explore our fully furnished apartments, each designed for comfortable everyday living."
             />
 
-            <div className="hidden md:block">
+            <div className="hidden shrink-0 md:block">
               <ButtonLink href="/rooms" variant="secondary">
                 View All Rooms
               </ButtonLink>
             </div>
           </div>
 
-          <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-14 md:gap-12 md:grid-cols-2 lg:grid-cols-3">
             {featuredRooms.map((room) => (
               <RoomCard
                 key={room.slug}
@@ -117,11 +118,12 @@ export default function Home() {
         href="/facilities"
         linkText="Explore Facilities"
         imagePosition="right"
+        background="cream"
       />
 
       {/* CONTACT CTA SECTION */}
       <section className="bg-white">
-        <Container className="py-20 text-center">
+        <Container className="py-16 md:py-20 text-center">
           <p className="text-sm uppercase tracking-[0.2em] text-olive/60">
             Get in Touch
           </p>
