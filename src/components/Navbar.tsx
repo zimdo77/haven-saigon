@@ -114,7 +114,7 @@ export default function Navbar() {
                 />
 
                 <p className="mt-4 text-sm leading-relaxed">
-                  Serviced apartments in Saigon
+                  Serviced apartments in Ho Chi Minh City
                 </p>
               </div>
 
