@@ -124,18 +124,15 @@ export default function Home() {
       {/* CONTACT CTA SECTION */}
       <section className="bg-white">
         <Container className="py-16 md:py-20 text-center">
-          <p className="text-sm uppercase tracking-[0.2em] text-olive/60">
+          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-olive/60">
             Get in Touch
           </p>
 
-          <h2 className="mt-3 font-serif text-4xl font-medium md:text-5xl">
-            Make HAVEN Your Home in Saigon
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-xl leading-relaxed text-olive/70">
-            Have a question or want to check availability? Get in touch and
-            we’ll help you find the right apartment.
-          </p>
+          <SectionHeading
+            title="Make HAVEN Your Home in Saigon"
+            subtitle="Have a question or want to check availability? Get in touch and we’ll help you find the right apartment."
+            align="center"
+          />
 
           <div className="mt-8">
             <ButtonLink href="/contact" variant="primary">
