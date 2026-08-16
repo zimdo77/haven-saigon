@@ -3,34 +3,19 @@ import Image from "next/image";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import ButtonLink from "@/components/ButtonLink";
+import PageHero from "@/components/PageHero";
 
 export default function AboutPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative h-[45vh] md:h-[55vh] min-h-90 overflow-hidden ">
-        <Image
-          src="/images/about/about2.jpg"
-          alt="HAVEN Saigon serviced apartments"
-          fill
-          priority
-          className="object-cover"
-        />
-
-        <div className="absolute inset-0 bg-black/60" />
-
-        <Container className="relative flex h-full items-center justify-center">
-          <div className="max-w-2xl text-center text-white">
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl">
-              About HAVEN SAIGON
-            </h1>
-
-            <p className="mt-4 text-base leading-relaxed text-white/85 md:text-lg">
-              Comfortable and convenient serviced living in Ho Chi Minh City.
-            </p>
-          </div>
-        </Container>
-      </section>
+      <PageHero
+        title="About HAVEN SAIGON"
+        subtitle="Comfortable and convenient serviced living in Ho Chi Minh City."
+        imageSrc="/images/about/about2.jpg"
+        imageAlt="HAVEN Saigon serviced apartments"
+        priority
+      />
 
       {/* OUR STORY */}
       <section className="py-16 md:py-20">
