@@ -1,7 +1,8 @@
 import Image from "next/image";
+
+import ButtonLink from "@/components/ButtonLink";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
-import ButtonLink from "@/components/ButtonLink";
 
 type SectionPreviewProps = {
   eyebrow?: string;
@@ -43,12 +44,7 @@ export default function SectionPreview({
 
   const content = (
     <div className="flex flex-col justify-center">
-      {eyebrow && (
-        <p className="mb-3 text-sm uppercase tracking-[0.2em] text-olive/70">
-          {eyebrow}
-        </p>
-      )}
-      <SectionHeading title={title} subtitle={description} />
+      <SectionHeading eyebrow={eyebrow} title={title} subtitle={description} />
 
       <div className="mt-8">
         <ButtonLink href={href} variant="secondary">
@@ -59,7 +55,7 @@ export default function SectionPreview({
   );
 
   return (
-    <section className={`bg-${background}`}>
+    <section className={background === "white" ? "bg-white" : "bg-cream"}>
       <Container className="grid gap-10 py-16 md:grid-cols-2 md:gap-16 md:py-20">
         <div
           className={

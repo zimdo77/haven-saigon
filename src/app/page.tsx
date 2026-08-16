@@ -73,6 +73,7 @@ export default function Home() {
         <Container className="py-16 md:py-20">
           <div className="flex items-end justify-between gap-6">
             <SectionHeading
+              eyebrow="Our Rooms"
               title="Find a Space That Suits Your Stay"
               subtitle="Explore our fully furnished apartments, each designed for comfortable everyday living."
             />
@@ -124,11 +125,8 @@ export default function Home() {
       {/* CONTACT CTA SECTION */}
       <section className="bg-white">
         <Container className="py-16 md:py-20 text-center">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-olive/60">
-            Get in Touch
-          </p>
-
           <SectionHeading
+            eyebrow="Get in Touch"
             title="Make HAVEN Your Home in Saigon"
             subtitle="Have a question or want to check availability? Get in touch and we’ll help you find the right apartment."
             align="center"

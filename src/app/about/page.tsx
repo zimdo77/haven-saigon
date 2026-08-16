@@ -46,11 +46,10 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-olive/60">
-                About Us
-              </p>
-
-              <SectionHeading title="A place to feel at home" />
+              <SectionHeading
+                eyebrow="About Us"
+                title="A place to feel at home"
+              />
 
               <div className="mt-6 space-y-4 text-sm leading-7 text-olive/75 md:text-base">
                 <p>
@@ -60,9 +59,9 @@ export default function AboutPage() {
                 </p>
 
                 <p>
-                  Whether you&apos;re visiting for a short stay or settling in for
-                  longer, our aim is to provide the comfort of home alongside
-                  the convenience of serviced living.
+                  Whether you&apos;re visiting for a short stay or settling in
+                  for longer, our aim is to provide the comfort of home
+                  alongside the convenience of serviced living.
                 </p>
               </div>
             </div>
@@ -73,16 +72,11 @@ export default function AboutPage() {
       {/* WHY HAVEN */}
       <section className="bg-white py-16 md:py-24">
         <Container>
-          <div className="text-center">
-            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-olive/60">
-              Why HAVEN
-            </p>
-
-            <SectionHeading
-              title="Designed for comfortable living"
-              align="center"
-            />
-          </div>
+          <SectionHeading
+            eyebrow="Why HAVEN"
+            title="Designed for comfortable living"
+            align="center"
+          />
 
           <div className="mt-12 grid gap-10 md:grid-cols-3 md:gap-12">
             <div className="text-center">
@@ -98,8 +92,8 @@ export default function AboutPage() {
               <h3 className="font-serif text-2xl">Convenience</h3>
 
               <p className="mt-3 text-sm leading-6 text-olive/70">
-                Serviced living that makes everyday life easier, whether you&apos;re
-                staying for a few days or for a longer period.
+                Serviced living that makes everyday life easier, whether
+                you&apos;re staying for a few days or for a longer period.
               </p>
             </div>
 
@@ -120,11 +114,10 @@ export default function AboutPage() {
         <Container>
           <div className="grid items-center gap-10 md:grid-cols-[1fr_1.1fr] md:gap-16">
             <div>
-              <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-olive/60">
-                Your Stay
-              </p>
-
-              <SectionHeading title="More than just a place to stay" />
+              <SectionHeading
+                eyebrow="Your Stay"
+                title="More than just a place to stay"
+              />
 
               <p className="mt-6 max-w-lg text-sm leading-7 text-olive/75 md:text-base">
                 HAVEN is designed to give you the space and comfort to settle
@@ -148,15 +141,11 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="bg-white py-16 text-olive md:py-20">
         <Container>
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-olive/60">
-              Stay With Us
-            </p>
-
+          <div className="mx-auto max-w-2xl">
             <SectionHeading
+              eyebrow="Stay With Us"
               title="Find your place at HAVEN"
-              subtitle="Explore our serviced apartments or get in touch with us to find
-              the right stay for your time in Saigon."
+              subtitle="Explore our serviced apartments or get in touch with us to find the right stay for your time in Saigon."
               align="center"
             />
 
