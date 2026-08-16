@@ -23,7 +23,7 @@ export default function SectionHeading({
 
       {subtitle && (
         <p
-          className={`mt-4 max-w-2xl text-base leading-relaxed text-olive/70 ${
+          className={`mt-4 whitespace-pre-line max-w-2xl text-base leading-relaxed text-olive/70 ${
             align === "center" ? "mx-auto" : ""
           }`}
         >

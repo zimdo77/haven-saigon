@@ -8,7 +8,7 @@ export default function AboutPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative h-[45vh] min-h-90 overflow-hidden md:h-[55vh]">
+      <section className="relative h-[45vh] md:h-[55vh] min-h-90 overflow-hidden ">
         <Image
           src="/images/about/about2.jpg"
           alt="HAVEN Saigon serviced apartments"
@@ -21,7 +21,7 @@ export default function AboutPage() {
 
         <Container className="relative flex h-full items-center justify-center">
           <div className="max-w-2xl text-center text-white">
-            <h1 className="font-serif text-5xl md:text-6xl">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl">
               About HAVEN SAIGON
             </h1>
 
@@ -33,15 +33,17 @@ export default function AboutPage() {
       </section>
 
       {/* OUR STORY */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-20">
         <Container>
           <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
-            <div className="relative aspect-4/5 overflow-hidden">
+            <div className="relative aspect-4/3 overflow-hidden">
               <Image
-                src="/images/about/about4.jpg"
+                src="/images/about/about1.jpg"
                 alt="Interior of HAVEN Saigon"
                 fill
                 className="object-cover"
+                sizes="(min-width: 768px) 50vw, 100vw"
+                loading="eager"
               />
             </div>
 
@@ -70,7 +72,7 @@ export default function AboutPage() {
       </section>
 
       {/* WHY HAVEN */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-20">
         <Container>
           <SectionHeading
             eyebrow="Why HAVEN"
@@ -110,28 +112,24 @@ export default function AboutPage() {
       </section>
 
       {/* LIFESTYLE */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-20">
         <Container>
           <div className="grid items-center gap-10 md:grid-cols-[1fr_1.1fr] md:gap-16">
-            <div>
+            <div className="order-2 md:order-1">
               <SectionHeading
                 eyebrow="Your Stay"
                 title="More than just a place to stay"
+                subtitle="HAVEN is designed to give you the space and comfort to settle into Saigon at your own pace. A place where you can relax, recharge, and feel at home throughout your stay."
               />
-
-              <p className="mt-6 max-w-lg text-sm leading-7 text-olive/75 md:text-base">
-                HAVEN is designed to give you the space and comfort to settle
-                into Saigon at your own pace. A place where you can relax,
-                recharge, and feel at home throughout your stay.
-              </p>
             </div>
 
-            <div className="relative aspect-4/3 overflow-hidden">
+            <div className="relative aspect-4/3 overflow-hidden order-1 md:order-2">
               <Image
                 src="/images/about/about3.jpg"
                 alt="Comfortable living at HAVEN Saigon"
                 fill
                 className="object-cover"
+                sizes="(min-width: 768px) 50vw, 100vw"
               />
             </div>
           </div>
