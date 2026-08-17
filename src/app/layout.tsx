@@ -4,6 +4,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FloatingContactLinks from "@/components/FloatingContactLinks";
 
 export const metadata: Metadata = {
   title: "HAVEN Saigon",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
 
         <Footer />
+        <FloatingContactLinks />
       </body>
     </html>
   );
