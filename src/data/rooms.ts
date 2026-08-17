@@ -139,7 +139,7 @@ export const rooms: Room[] = [
     floorplans: [
       "/images/rooms/lemongrass/floorplan.jpg",
       "/images/rooms/lemongrass/floorplan-annotated.jpg",
-      "/images/rooms/chalemongrassmomile/floorplan-3d.jpg",
+      "/images/rooms/lemongrass/floorplan-3d.jpg",
     ],
   },
   {
@@ -241,6 +241,6 @@ export const rooms: Room[] = [
       "/images/rooms/rose-oolong/12.jpg",
       "/images/rooms/rose-oolong/13.jpg",
     ],
-    floorplans: ["/images/rooms/chamomile/floorplan.jpg"],
+    floorplans: ["/images/rooms/rose-oolong/floorplan.jpg"],
   },
 ];

@@ -10,7 +10,7 @@ export default function AboutPage() {
     <>
       {/* HERO */}
       <PageHero
-        title="About HAVEN SAIGON"
+        title="About HAVEN Saigon"
         subtitle="Comfortable and convenient serviced living in Ho Chi Minh City."
         imageSrc="/images/about/about2.jpg"
         imageAlt="HAVEN Saigon serviced apartments"

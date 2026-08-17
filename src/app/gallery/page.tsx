@@ -1,7 +1,15 @@
+import PageHero from "@/components/PageHero";
+
 export default function GalleryPage() {
   return (
     <div>
-      <h1>Photo Gallery</h1>
+      <PageHero
+        title="Photo Gallery"
+        subtitle="Take a closer look at HAVEN Saigon."
+        imageSrc="/images/gallery/hero.jpg"
+        imageAlt="HAVEN Saigon"
+        priority
+      />
     </div>
   );
 }

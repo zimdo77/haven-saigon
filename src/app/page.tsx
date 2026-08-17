@@ -85,7 +85,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 grid gap-14 md:gap-12 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
             {featuredRooms.map((room) => (
               <RoomCard
                 key={room.slug}
