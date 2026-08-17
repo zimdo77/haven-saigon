@@ -133,11 +133,11 @@ export default function AboutPage() {
             />
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <ButtonLink href="/rooms" variant="secondary">
+              <ButtonLink href="/rooms" variant="primary">
                 View Rooms
               </ButtonLink>
 
-              <ButtonLink href="/contact" variant="primary">
+              <ButtonLink href="/contact" variant="secondary">
                 Contact Us
               </ButtonLink>
             </div>
