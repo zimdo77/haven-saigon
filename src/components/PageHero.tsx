@@ -28,7 +28,7 @@ export default function PageHero({
         sizes="100vw"
       />
 
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/50" />
 
       <Container className="relative flex h-full items-center justify-center">
         <div className="max-w-2xl text-center text-white">
