@@ -4,7 +4,6 @@ import { Users, Maximize2 } from "lucide-react";
 
 import Container from "@/components/Container";
 import ButtonLink from "@/components/ButtonLink";
-import SectionHeading from "@/components/SectionHeading";
 
 import { rooms } from "@/data/rooms";
 
@@ -135,7 +134,7 @@ export default async function RoomPage({ params }: RoomPageProps) {
               <div
                 key={image}
                 className={`relative overflow-hidden ${
-                  index === 0 ? "md:col-span-2 aspect-[16/9]" : "aspect-4/3"
+                  index === 0 ? "md:col-span-2 aspect-video" : "aspect-4/3"
                 }`}
               >
                 <Image

@@ -22,7 +22,7 @@ export default function RoomsPage() {
         <Container>
           <SectionHeading
             eyebrow="Our Rooms"
-            title="Find your space at HAVEN"
+            title="Find your space that suits your stay"
             subtitle="From comfortable studios to spacious two-bedroom apartments, each room is designed for relaxed and convenient living."
           />
 

@@ -138,7 +138,7 @@ export default function Footer() {
                     +84 329 220 226
                   </a>
 
-                  <p className="mt-1 text-xs text-white/60">WhatsApp, Zalo</p>
+                  <p className="mt-1 text-xs text-white/60">Also available on WhatsApp & Zalo</p>
                 </div>
               </div>
 
