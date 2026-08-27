@@ -122,7 +122,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="leading-relaxed transition-opacity hover:opacity-70"
                 >
-                  13 Tong Huu Dinh Street, An Khanh Ward, Thu Duc City, Ho Chi
+                  13 Tống Hữu Định Street, An Khánh Ward, Thủ Đức City, Hồ Chí
                   Minh City
                 </a>
               </div>
