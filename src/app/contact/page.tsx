@@ -5,6 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
+import ContactForm from "@/components/ContactForm";
 
 export default function ContactPage() {
   return (
@@ -33,89 +34,7 @@ export default function ContactPage() {
               <h2 className="font-serif text-2xl md:text-3xl">
                 Send us an enquiry
               </h2>
-
-              <form className="mt-6 space-y-5">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="mb-2 block text-sm font-medium"
-                  >
-                    Name
-                  </label>
-
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    autoComplete="name"
-                    required
-                    placeholder="Your name"
-                    className="w-full border border-border bg-white px-4 py-3 outline-none transition focus:border-olive"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="mb-2 block text-sm font-medium"
-                  >
-                    Email
-                  </label>
-
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autoComplete="email"
-                    required
-                    placeholder="you@example.com"
-                    className="w-full border border-border bg-white px-4 py-3 outline-none transition focus:border-olive"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="mb-2 block text-sm font-medium"
-                  >
-                    Phone
-                  </label>
-
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    autoComplete="tel"
-                    placeholder="Your phone number"
-                    className="w-full border border-border bg-white px-4 py-3 outline-none transition focus:border-olive"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="mb-2 block text-sm font-medium"
-                  >
-                    Message
-                  </label>
-
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={6}
-                    required
-                    placeholder="How can we help?"
-                    className="w-full resize-none border border-border bg-white px-4 py-3 outline-none transition focus:border-olive"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="bg-olive px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-85 cursor-pointer"
-                >
-                  Send Enquiry
-                </button>
-              </form>
+              <ContactForm />
             </div>
 
             {/* CONTACT DETAILS */}
@@ -190,7 +109,7 @@ export default function ContactPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Contact HAVEN Saigon on WhatsApp"
-                        className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#25D366] shadow-lg transition-transform hover:scale-105"
+                        className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#25D366] transition-transform hover:scale-105"
                       >
                         <FaWhatsapp className="h-6 w-6" />
                       </a>
@@ -200,7 +119,7 @@ export default function ContactPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Contact HAVEN Saigon on Zalo"
-                        className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white shadow-lg transition-transform hover:scale-105"
+                        className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white transition-transform hover:scale-105"
                       >
                         <Image
                           src="/icons/zalo.svg"
