@@ -21,7 +21,7 @@ export default function ButtonLink({
   return (
     <Link
       href={href}
-      className={`inline-flex items-center justify-center px-6 py-3 text-sm font-medium transition-colors ${styles[variant]}`}
+      className={`inline-flex items-center justify-center px-6 py-3 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-olive focus-visible:ring-offset-2 ${styles[variant]}`}
     >
       {children}
     </Link>

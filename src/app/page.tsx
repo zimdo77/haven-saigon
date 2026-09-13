@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative min-h-[70vh] md:min-h-[80vh] overflow-hidden">
+      <section className="relative min-h-[65vh] overflow-hidden sm:min-h-[70vh] md:min-h-[80vh]">
         <Image
           src="/images/home/hero.jpg"
           alt="HAVEN Saigon serviced apartment"
@@ -30,13 +30,13 @@ export default function Home() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/30 to-transparent" />
 
-        <Container className="relative flex min-h-[70vh] md:min-h-[80vh] items-center py-16 md:py-20">
+        <Container className="relative flex min-h-[65vh] items-center py-14 sm:min-h-[70vh] sm:py-16 md:min-h-[80vh] md:py-20">
           <div className="max-w-2xl text-white">
-            <p className="mb-4 text-sm uppercase tracking-[0.2em]">
+            <p className="mb-4 text-xs uppercase tracking-[0.18em] sm:text-sm sm:tracking-[0.2em]">
               Serviced Apartments in Thảo Điền
             </p>
 
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-medium leading-tight">
+            <h1 className="font-serif text-4xl font-medium leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
               Stay Your Way. <br />
               Feel at Home.
             </h1>
@@ -71,7 +71,7 @@ export default function Home() {
       {/* ROOMS PREVIEW SECTION */}
       <section className="bg-white">
         <Container className="py-16 md:py-20">
-          <div className="flex items-end justify-between gap-6">
+          <div className="md:flex md:items-end md:justify-between md:gap-6">
             <SectionHeading
               eyebrow="Our Rooms"
               title="Find a Space That Suits Your Stay"
@@ -85,7 +85,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 grid gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-x-8 gap-y-10 sm:mt-10 sm:gap-y-12 md:grid-cols-2 lg:grid-cols-3">
             {featuredRooms.map((room) => (
               <RoomCard
                 key={room.slug}

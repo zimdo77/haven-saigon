@@ -18,15 +18,15 @@ export default function RoomsPage() {
       />
 
       {/* ROOMS */}
-      <section className="py-16 md:py-24">
+      <section className="py-14 sm:py-16 md:py-20 lg:py-24">
         <Container>
           <SectionHeading
             eyebrow="Our Rooms"
-            title="Find your space that suits your stay"
+            title="Find a space that suits your stay"
             subtitle="From comfortable studios to spacious two-bedroom apartments, each room is designed for relaxed and convenient living."
           />
 
-          <div className="mt-12 grid gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-x-8 gap-y-10 sm:mt-12 sm:gap-y-12 md:grid-cols-2 lg:grid-cols-3">
             {rooms.map((room) => (
               <RoomCard
                 key={room.slug}

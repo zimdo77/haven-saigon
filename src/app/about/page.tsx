@@ -10,7 +10,7 @@ export default function AboutPage() {
     <>
       {/* HERO */}
       <PageHero
-        title="About HAVEN Saigon"
+        title="About Us"
         subtitle="Comfortable and convenient serviced living in Ho Chi Minh City."
         imageSrc="/images/about/about2.jpg"
         imageAlt="HAVEN Saigon serviced apartments"
@@ -18,9 +18,9 @@ export default function AboutPage() {
       />
 
       {/* OUR STORY */}
-      <section className="py-16 md:py-20">
+      <section className="py-14 sm:py-16 md:py-20">
         <Container>
-          <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
+          <div className="grid items-center gap-8 sm:gap-10 md:grid-cols-2 md:gap-12 lg:gap-16">
             <div className="relative aspect-4/3 overflow-hidden">
               <Image
                 src="/images/about/about1.jpg"
@@ -34,11 +34,11 @@ export default function AboutPage() {
 
             <div>
               <SectionHeading
-                eyebrow="About Us"
+                eyebrow="Our Story"
                 title="A place to feel at home"
               />
 
-              <div className="mt-6 space-y-4 text-sm leading-7 text-olive/75 md:text-base">
+              <div className="mt-6 space-y-4 text-sm leading-7 text-olive/75 sm:text-base">
                 <p>
                   HAVEN Saigon offers comfortable serviced apartments designed
                   for guests looking for a convenient and welcoming place to
@@ -57,7 +57,7 @@ export default function AboutPage() {
       </section>
 
       {/* WHY HAVEN */}
-      <section className="bg-white py-16 md:py-20">
+      <section className="bg-white py-14 sm:py-16 md:py-20">
         <Container>
           <SectionHeading
             eyebrow="Why HAVEN"
@@ -65,7 +65,7 @@ export default function AboutPage() {
             align="center"
           />
 
-          <div className="mt-12 grid gap-10 md:grid-cols-3 md:gap-12">
+          <div className="mt-10 grid gap-8 sm:mt-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
             <div className="text-center">
               <h3 className="font-serif text-2xl">Comfort</h3>
 
@@ -97,9 +97,9 @@ export default function AboutPage() {
       </section>
 
       {/* LIFESTYLE */}
-      <section className="py-16 md:py-20">
+      <section className="py-14 sm:py-16 md:py-20">
         <Container>
-          <div className="grid items-center gap-10 md:grid-cols-[1fr_1.1fr] md:gap-16">
+          <div className="grid items-center gap-8 sm:gap-10 md:grid-cols-[1fr_1.1fr] md:gap-12 lg:gap-16">
             <div className="order-2 md:order-1">
               <SectionHeading
                 eyebrow="Your Stay"
@@ -122,7 +122,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-16 text-olive md:py-20">
+      <section className="bg-white py-14 text-olive sm:py-16 md:py-20">
         <Container>
           <div className="mx-auto max-w-2xl">
             <SectionHeading

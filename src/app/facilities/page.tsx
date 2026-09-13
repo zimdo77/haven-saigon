@@ -17,7 +17,7 @@ export default function FacilitiesPage() {
       />
 
       {/* INTRO */}
-      <section className="pt-16 pb-12 md:pt-24 md:pb-16">
+      <section className="pt-14 pb-10 sm:pt-16 sm:pb-12 md:pt-20 md:pb-16">
         <Container>
           <SectionHeading
             eyebrow="At HAVEN"
@@ -28,11 +28,11 @@ export default function FacilitiesPage() {
       </section>
 
       {/* FACILITIES */}
-      <section className="pb-16 md:pb-24">
-        <Container className="space-y-16 md:space-y-24">
+      <section className="pb-14 sm:pb-16 md:pb-20 lg:pb-24">
+        <Container className="space-y-14 sm:space-y-16 md:space-y-20 lg:space-y-24">
           {/* FEATURED — POOL */}
           <div>
-            <div className="relative aspect-2/1 overflow-hidden">
+            <div className="relative aspect-4/3 overflow-hidden md:aspect-2/1">
               <Image
                 src="/images/facilities/pool1.jpg"
                 alt="Swimming pool at HAVEN Saigon"
@@ -43,7 +43,7 @@ export default function FacilitiesPage() {
             </div>
 
             <div className="mt-6 max-w-2xl">
-              <h2 className="font-serif text-4xl md:text-4xl tracking-tight">
+              <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">
                 Swimming Pool
               </h2>
 
@@ -55,7 +55,7 @@ export default function FacilitiesPage() {
           </div>
 
           {/* MIDDLE GRID */}
-          <div className="grid gap-10 md:grid-cols-2 md:gap-10">
+          <div className="grid gap-8 sm:gap-10 md:grid-cols-2">
             {/* FITNESS */}
             <article>
               <div className="relative aspect-4/3 overflow-hidden">
@@ -69,7 +69,7 @@ export default function FacilitiesPage() {
               </div>
 
               <div className="mt-5">
-                <h2 className="font-serif text-4xl tracking-tight">
+                <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">
                   Fitness Area
                 </h2>
 
@@ -93,7 +93,7 @@ export default function FacilitiesPage() {
               </div>
 
               <div className="mt-5">
-                <h2 className="font-serif text-3xl tracking-tight">
+                <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">
                   Co-working Space
                 </h2>
 
@@ -107,7 +107,7 @@ export default function FacilitiesPage() {
 
           {/* ROOFTOP */}
           <div>
-            <div className="relative aspect-2/1 overflow-hidden">
+            <div className="relative aspect-4/3 overflow-hidden md:aspect-2/1">
               <Image
                 src="/images/facilities/rooftop.jpg"
                 alt="Rooftop terrace at HAVEN Saigon"
@@ -118,7 +118,7 @@ export default function FacilitiesPage() {
             </div>
 
             <div className="mt-6 ml-auto max-w-2xl md:text-right">
-              <h2 className="font-serif text-3xl md:text-4xl tracking-tight">
+              <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">
                 Rooftop Terrace
               </h2>
 

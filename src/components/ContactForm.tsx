@@ -8,7 +8,11 @@ export default function ContactForm() {
 
   if (state.succeeded) {
     return (
-      <div className="mt-6 flex min-h-[420px] items-center justify-center px-6 py-12 text-center">
+      <div
+        role="status"
+        aria-live="polite"
+        className="mt-6 flex min-h-[420px] items-center justify-center px-6 py-12 text-center"
+      >
         <div className="max-w-sm">
           <div className="mx-auto flex size-12 items-center justify-center rounded-full border border-olive/30">
             <Check className="size-5" />
@@ -28,7 +32,11 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-6 space-y-5">
+    <form
+      onSubmit={handleSubmit}
+      aria-busy={state.submitting}
+      className="mt-6 space-y-5"
+    >
       <input
         type="hidden"
         name="subject"
@@ -47,7 +55,7 @@ export default function ContactForm() {
           autoComplete="name"
           required
           placeholder="Your name"
-          className="w-full border border-border bg-white px-4 py-3 outline-none transition focus:border-olive"
+          className="w-full border border-border bg-white px-4 py-3 transition focus-visible:border-olive focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-olive/30"
         />
 
         <ValidationError
@@ -70,7 +78,7 @@ export default function ContactForm() {
           autoComplete="email"
           required
           placeholder="you@example.com"
-          className="w-full border border-border bg-white px-4 py-3 outline-none transition focus:border-olive"
+          className="w-full border border-border bg-white px-4 py-3 transition focus-visible:border-olive focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-olive/30"
         />
 
         <ValidationError
@@ -83,7 +91,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="phone" className="mb-2 block text-sm font-medium">
-          Phone
+          Phone <span className="font-normal text-olive/60">(optional)</span>
         </label>
 
         <input
@@ -91,8 +99,8 @@ export default function ContactForm() {
           name="phone"
           type="tel"
           autoComplete="tel"
-          placeholder="Your phone number (optional)"
-          className="w-full border border-border bg-white px-4 py-3 outline-none transition focus:border-olive"
+          placeholder="Your phone number"
+          className="w-full border border-border bg-white px-4 py-3 transition focus-visible:border-olive focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-olive/30"
         />
 
         <ValidationError
@@ -114,7 +122,7 @@ export default function ContactForm() {
           rows={6}
           required
           placeholder="How can we help?"
-          className="w-full resize-none border border-border bg-white px-4 py-3 outline-none transition focus:border-olive"
+          className="w-full border border-border bg-white px-4 py-3 transition focus-visible:border-olive focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-olive/30"
         />
 
         <ValidationError
@@ -128,9 +136,9 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className="bg-olive px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-85 disabled:cursor-not-allowed disabled:opacity-50"
+        className="bg-olive px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-olive focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
       >
-        {state.submitting ? "Sending..." : "Send Enquiry"}
+        {state.submitting ? "Sending…" : "Send Enquiry"}
       </button>
 
       <ValidationError errors={state.errors} className="text-sm text-danger" />

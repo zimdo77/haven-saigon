@@ -15,7 +15,10 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <header className="sticky top-0 z-50 bg-olive text-cream border-b border-border/20 shadow-sm">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 font-sans sm:px-6 sm:py-4 lg:px-8">
+      <nav
+        aria-label="Primary navigation"
+        className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 font-sans sm:px-6 sm:py-4 lg:px-8"
+      >
         <Link href="/">
           <Image
             src="/logo/haven-logo.png"
@@ -30,6 +33,7 @@ export default function Navbar() {
         <div className="hidden items-center gap-6 lg:flex xl:gap-8">
           <Link
             href="/"
+            aria-current={pathname === "/" ? "page" : undefined}
             className={`text-sm tracking-wide transition-opacity hover:opacity-70 ${
               pathname === "/" ? "border-b border-cream pb-0.5" : ""
             }`}
@@ -39,6 +43,7 @@ export default function Navbar() {
 
           <Link
             href="/about"
+            aria-current={pathname === "/about" ? "page" : undefined}
             className={`text-sm tracking-wide transition-opacity hover:opacity-70 ${
               pathname === "/about" ? "border-b border-cream pb-0.5" : ""
             }`}
@@ -48,6 +53,7 @@ export default function Navbar() {
 
           <Link
             href="/rooms"
+            aria-current={pathname.startsWith("/rooms") ? "page" : undefined}
             className={`text-sm tracking-wide transition-opacity hover:opacity-70 ${
               pathname.startsWith("/rooms")
                 ? "border-b border-cream pb-0.5"
@@ -59,6 +65,7 @@ export default function Navbar() {
 
           <Link
             href="/facilities"
+            aria-current={pathname === "/facilities" ? "page" : undefined}
             className={`text-sm tracking-wide transition-opacity hover:opacity-70 ${
               pathname === "/facilities" ? "border-b border-cream pb-0.5" : ""
             }`}
@@ -68,6 +75,7 @@ export default function Navbar() {
 
           <Link
             href="/gallery"
+            aria-current={pathname === "/gallery" ? "page" : undefined}
             className={`text-sm tracking-wide transition-opacity hover:opacity-70 ${
               pathname === "/gallery" ? "border-b border-cream pb-0.5" : ""
             }`}
@@ -77,6 +85,7 @@ export default function Navbar() {
 
           <Link
             href="/contact"
+            aria-current={pathname === "/contact" ? "page" : undefined}
             className={`text-sm tracking-wide transition-opacity hover:opacity-70 ${
               pathname === "/contact" ? "border-b border-cream pb-0.5" : ""
             }`}
@@ -90,7 +99,7 @@ export default function Navbar() {
           <SheetTrigger
             render={
               <button
-                className="flex items-center justify-center rounded-md p-2 transition-colors hover:bg-white/10 lg:hidden"
+                className="flex items-center justify-center rounded-md p-2 transition-colorshover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream/70"
                 aria-label="Open navigation menu"
               />
             }
@@ -119,12 +128,16 @@ export default function Navbar() {
               </div>
 
               {/* Navigation links */}
-              <nav className="flex flex-col px-6 py-4">
+              <nav
+                aria-label="Mobile navigation"
+                className="flex flex-col px-6 py-4"
+              >
                 <SheetClose
                   nativeButton={false}
                   render={
                     <Link
                       href="/"
+                      aria-current={pathname === "/" ? "page" : undefined}
                       className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
                         pathname === "/" ? "font-medium text-white" : ""
                       }`}
@@ -139,6 +152,7 @@ export default function Navbar() {
                   render={
                     <Link
                       href="/about"
+                      aria-current={pathname === "/about" ? "page" : undefined}
                       className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
                         pathname === "/about" ? "font-medium text-white" : ""
                       }`}
@@ -153,6 +167,9 @@ export default function Navbar() {
                   render={
                     <Link
                       href="/rooms"
+                      aria-current={
+                        pathname.startsWith("/rooms") ? "page" : undefined
+                      }
                       className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
                         pathname.startsWith("/rooms")
                           ? "font-medium text-white"
@@ -169,6 +186,9 @@ export default function Navbar() {
                   render={
                     <Link
                       href="/facilities"
+                      aria-current={
+                        pathname === "/facilities" ? "page" : undefined
+                      }
                       className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
                         pathname === "/facilities"
                           ? "font-medium text-white"
@@ -185,6 +205,9 @@ export default function Navbar() {
                   render={
                     <Link
                       href="/gallery"
+                      aria-current={
+                        pathname === "/gallery" ? "page" : undefined
+                      }
                       className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
                         pathname === "/gallery" ? "font-medium text-white" : ""
                       }`}
@@ -199,6 +222,9 @@ export default function Navbar() {
                   render={
                     <Link
                       href="/contact"
+                      aria-current={
+                        pathname === "/contact" ? "page" : undefined
+                      }
                       className={`border-b border-border/50 py-5 text-lg tracking-wide transition-colors hover:opacity-70 ${
                         pathname === "/contact" ? "font-medium text-white" : ""
                       }`}

@@ -25,7 +25,7 @@ export default async function RoomPage({ params }: RoomPageProps) {
   return (
     <>
       {/* HERO IMAGE */}
-      <section className="relative h-[55vh] min-h-100 overflow-hidden md:h-[65vh]">
+      <section className="relative h-[50vh] min-h-90 overflow-hidden sm:min-h-100 md:h-[60vh] lg:h-[65vh]">
         <Image
           src={room.images[0]}
           alt={`${room.name} ${room.roomType}`}
@@ -37,12 +37,12 @@ export default async function RoomPage({ params }: RoomPageProps) {
         <div className="absolute inset-0 bg-black/35" />
 
         <Container className="relative flex h-full items-end">
-          <div className="pb-10 text-white md:pb-14">
+          <div className="pb-8 text-white sm:pb-10 md:pb-14">
             <p className="text-sm uppercase tracking-[0.18em] text-white/80">
               {room.roomType}
             </p>
 
-            <h1 className="mt-2 font-serif text-5xl sm:text-6xl md:text-7xl">
+            <h1 className="mt-2 font-serif text-4xl leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
               {room.name}
             </h1>
           </div>
@@ -50,7 +50,7 @@ export default async function RoomPage({ params }: RoomPageProps) {
       </section>
 
       {/* ROOM DETAILS */}
-      <section className="py-16 md:py-24">
+      <section className="py-14 sm:py-16 md:py-20 lg:py-24">
         <Container>
           <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr] lg:gap-20">
             {/* LEFT */}
@@ -59,7 +59,7 @@ export default async function RoomPage({ params }: RoomPageProps) {
                 {room.roomType}
               </p>
 
-              <h2 className="mt-3 font-serif text-4xl md:text-5xl">
+              <h2 className="mt-3 font-serif text-3xl leading-tight sm:text-4xl md:text-5xl">
                 About {room.name}
               </h2>
 
@@ -117,14 +117,14 @@ export default async function RoomPage({ params }: RoomPageProps) {
       </section>
 
       {/* PHOTO GALLERY */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-14 sm:py-16 md:py-20 lg:py-24">
         <Container>
           <div className="mb-10">
             <p className="text-sm uppercase tracking-[0.15em] text-olive/60">
               Gallery
             </p>
 
-            <h2 className="mt-2 font-serif text-4xl md:text-5xl">
+            <h2 className="mt-2 font-serif text-3xl sm:text-4xl md:text-5xl">
               Inside {room.name}
             </h2>
           </div>
@@ -134,7 +134,9 @@ export default async function RoomPage({ params }: RoomPageProps) {
               <div
                 key={image}
                 className={`relative overflow-hidden ${
-                  index === 0 ? "md:col-span-2 aspect-video" : "aspect-4/3"
+                  index === 0
+                    ? "aspect-4/3 md:col-span-2 md:aspect-video"
+                    : "aspect-4/3"
                 }`}
               >
                 <Image
@@ -154,14 +156,14 @@ export default async function RoomPage({ params }: RoomPageProps) {
 
       {/* FLOORPLANS */}
       {room.floorplans.length > 0 && (
-        <section className="py-16 md:py-24">
+        <section className="py-14 sm:py-16 md:py-20 lg:py-24">
           <Container>
             <div className="mb-10">
               <p className="text-sm uppercase tracking-[0.15em] text-olive/60">
                 Layout
               </p>
 
-              <h2 className="mt-2 font-serif text-4xl md:text-5xl">
+              <h2 className="mt-2 font-serif text-3xl sm:text-4xl md:text-5xl">
                 Floorplans
               </h2>
             </div>

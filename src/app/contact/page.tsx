@@ -20,7 +20,7 @@ export default function ContactPage() {
       />
 
       {/* CONTACT */}
-      <section className="py-16 md:py-24">
+      <section className="py-14 sm:py-16 md:py-20 lg:py-24">
         <Container>
           <SectionHeading
             eyebrow="Get in Touch"
@@ -28,18 +28,18 @@ export default function ContactPage() {
             subtitle="Whether you're planning your stay or simply have a question, send us a message or reach out directly."
           />
 
-          <div className="mt-12 grid gap-12 md:grid-cols-2 md:gap-16 lg:gap-24">
+          <div className="mt-10 grid gap-10 sm:mt-12 sm:gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-24">
             {/* FORM */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl">
+              <h2 className="font-serif text-2xl sm:text-3xl">
                 Send us an enquiry
               </h2>
               <ContactForm />
             </div>
 
             {/* CONTACT DETAILS */}
-            <div className="md:pt-1">
-              <h2 className="font-serif text-2xl md:text-3xl">Contact HAVEN</h2>
+            <div>
+              <h2 className="font-serif text-2xl sm:text-3xl">Contact HAVEN</h2>
 
               <p className="mt-4 max-w-md leading-relaxed text-olive/70">
                 Prefer to contact us directly? Reach out by phone, email or
@@ -138,13 +138,13 @@ export default function ContactPage() {
       </section>
 
       {/* MAP */}
-      <section className="pb-16 md:pb-24">
+      <section className="pb-14 sm:pb-16 md:pb-20 lg:pb-24">
         <Container>
           <div className="overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0687133566194!2d106.73284799999999!3d10.8060493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527962cc57533%3A0xbfc19027fd4c9f7e!2sHaven%20Saigon%20-%20Thao%20Dien%20Serviced%20Apartment!5e0!3m2!1sen!2sau!4v1787138003040!5m2!1sen!2sau"
               title="HAVEN Saigon location"
-              className="h-[350px] w-full border-0 md:h-[450px]"
+              className="h-[300px] w-full border-0 sm:h-[350px] md:h-[400px] lg:h-[450px]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
