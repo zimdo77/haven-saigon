@@ -7,10 +7,10 @@ import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-olive text-white">
-      <div className="mx-auto max-w-7xl px-6 py-12">
-        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1.3fr]">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
+        <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1.3fr]">
           {/* HAVEN */}
-          <div>
+          <div className="sm:col-span-2 lg:col-span-1">
             <Image
               src="/logo/haven-logo.png"
               alt="HAVEN Saigon"
@@ -25,7 +25,7 @@ export default function Footer() {
             </p>
 
             {/* Follow Us */}
-            <div className="mt-8">
+            <div className="mt-6 sm:mt-8">
               <h3 className="mb-3 font-serif text-2xl">Follow Us</h3>
 
               <div className="flex gap-4">
@@ -34,7 +34,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
-                  className="text-xl transition-opacity hover:opacity-70 hover:scale-110"
+                  className="text-xl transition-[opacity,transform] hover:scale-110 hover:opacity-70"
                 >
                   <FaFacebookF />
                 </a>
@@ -44,7 +44,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="text-xl transition-opacity hover:opacity-70 hover:scale-110"
+                  className="text-xl transition-[opacity,transform] hover:scale-110 hover:opacity-70"
                 >
                   <FaInstagram />
                 </a>
@@ -54,7 +54,7 @@ export default function Footer() {
                   aria-label="TikTok"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl transition-opacity hover:opacity-70 hover:scale-110"
+                  className="text-xl transition-[opacity,transform] hover:scale-110 hover:opacity-70"
                 >
                   <FaTiktok />
                 </a>
@@ -147,7 +147,7 @@ export default function Footer() {
 
                 <a
                   href="mailto:sales@havensaigon.com.vn"
-                  className="transition-opacity hover:opacity-70"
+                  className="not-visited:transition-opacity hover:opacity-70"
                 >
                   sales@havensaigon.com.vn
                 </a>
@@ -157,7 +157,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-10 border-t border-border/50 pt-6 text-sm text-cream">
+        <div className="mt-10 border-t border-border/50 pt-6 text-center text-sm text-cream sm:text-left">
           © 2026 HAVEN Saigon. All rights reserved.
         </div>
       </div>

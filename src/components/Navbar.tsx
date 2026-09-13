@@ -15,19 +15,19 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <header className="sticky top-0 z-50 bg-olive text-cream border-b border-border/20 shadow-sm">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 font-sans">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 font-sans sm:px-6 sm:py-4 lg:px-8">
         <Link href="/">
           <Image
             src="/logo/haven-logo.png"
             alt="HAVEN Saigon"
             width={249}
             height={65}
-            className="h-10 w-auto"
+            className="h-9 w-auto sm:h-10"
           />
         </Link>
 
         {/* Desktop navigation */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-6 lg:flex xl:gap-8">
           <Link
             href="/"
             className={`text-sm tracking-wide transition-opacity hover:opacity-70 ${
@@ -90,7 +90,7 @@ export default function Navbar() {
           <SheetTrigger
             render={
               <button
-                className="flex items-center justify-center rounded-md p-2 transition-colors hover:bg-white/10 md:hidden"
+                className="flex items-center justify-center rounded-md p-2 transition-colors hover:bg-white/10 lg:hidden"
                 aria-label="Open navigation menu"
               />
             }
@@ -113,7 +113,7 @@ export default function Navbar() {
                   className="h-9 w-auto"
                 />
 
-                <p className="mt-4 text-sm leading-relaxed">
+                <p className="mt-4 text-sm leading-relaxed text-cream/70">
                   Serviced apartments in Ho Chi Minh City
                 </p>
               </div>
