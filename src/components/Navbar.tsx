@@ -99,7 +99,7 @@ export default function Navbar() {
           <SheetTrigger
             render={
               <button
-                className="flex items-center justify-center rounded-md p-2 transition-colorshover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream/70"
+                className="flex items-center justify-center rounded-md p-2 transition-colorshover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cream/70 lg:hidden"
                 aria-label="Open navigation menu"
               />
             }
