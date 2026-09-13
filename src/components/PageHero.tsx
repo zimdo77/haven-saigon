@@ -18,7 +18,7 @@ export default function PageHero({
   priority = false,
 }: PageHeroProps) {
   return (
-    <section className="relative h-[45vh] min-h-90 overflow-hidden md:h-[55vh]">
+    <section className="relative h-[45vh] min-h-80 overflow-hidden sm:min-h-90 md:h-[55vh]">
       <Image
         src={imageSrc}
         alt={imageAlt}
@@ -32,12 +32,12 @@ export default function PageHero({
 
       <Container className="relative flex h-full items-center justify-center">
         <div className="max-w-2xl text-center text-white">
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl">
+          <h1 className="font-serif text-3xl leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
             {title}
           </h1>
 
           {subtitle && (
-            <p className="mt-4 text-base leading-relaxed text-white/85 md:text-lg">
+            <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">
               {subtitle}
             </p>
           )}

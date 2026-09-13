@@ -30,7 +30,7 @@ export default function SectionPreview({
   background = "cream",
 }: SectionPreviewProps) {
   const image = (
-    <div className="relative aspect-4/3 overflow-hidden">
+    <div className="relative aspect-4/3 overflow-hidden md:aspect-[5/4]">
       <Image
         src={imageSrc}
         alt={imageAlt}
@@ -46,7 +46,7 @@ export default function SectionPreview({
     <div className="flex flex-col justify-center">
       <SectionHeading eyebrow={eyebrow} title={title} subtitle={description} />
 
-      <div className="mt-8">
+      <div className="mt-6 sm:mt-8">
         <ButtonLink href={href} variant="secondary">
           {linkText}
         </ButtonLink>
@@ -56,7 +56,7 @@ export default function SectionPreview({
 
   return (
     <section className={background === "white" ? "bg-white" : "bg-cream"}>
-      <Container className="grid gap-10 py-16 md:grid-cols-2 md:gap-16 md:py-20">
+      <Container className="grid gap-8 py-14 sm:gap-10 sm:py-16 md:grid-cols-2 md:gap-12 lg:gap-16 lg:py-20">
         <div
           className={
             imagePosition === "right" ? "order-1 md:order-2" : "order-1"

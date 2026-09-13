@@ -40,11 +40,11 @@ export default function RoomCard({
           {roomType}
         </p>
 
-        <h3 className="mt-2 font-serif text-3xl transition-opacity group-hover:opacity-60">
+        <h3 className="mt-2 font-serif text-2xl transition-opacity group-hover:opacity-60 sm:text-3xl">
           {name}
         </h3>
 
-        <div className="mt-3 flex items-center gap-4 text-sm text-olive/70">
+        <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-olive/70">
           <span>{size} m²</span>
 
           <span className="flex items-center gap-1.5">
@@ -53,7 +53,7 @@ export default function RoomCard({
           </span>
         </div>
 
-        <p className="mt-4 line-clamp-2 leading-relaxed text-olive/70">
+        <p className="mt-4 line-clamp-2 text-sm leading-relaxed text-olive/70 sm:text-base">
           {description}
         </p>
       </div>
