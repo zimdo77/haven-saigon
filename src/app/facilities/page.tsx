@@ -11,8 +11,8 @@ export default function FacilitiesPage() {
       <PageHero
         title="Facilities"
         subtitle="Convenient spaces for everyday use."
-        imageSrc="/images/facilities/pool2.jpg"
-        imageAlt="Facilities at HAVEN Saigon"
+        imageSrc="/images/facilities/pool.png"
+        imageAlt="Facilities at Haven Saigon"
         priority
       />
 
@@ -34,8 +34,8 @@ export default function FacilitiesPage() {
           <div>
             <div className="relative aspect-4/3 overflow-hidden md:aspect-2/1">
               <Image
-                src="/images/facilities/pool1.jpg"
-                alt="Swimming pool at HAVEN Saigon"
+                src="/images/facilities/pool.png"
+                alt="Swimming pool at Haven Saigon"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1280px) 1216px, 100vw"
@@ -60,8 +60,8 @@ export default function FacilitiesPage() {
             <article>
               <div className="relative aspect-4/3 overflow-hidden">
                 <Image
-                  src="/images/facilities/gym1.jpg"
-                  alt="Fitness area at HAVEN Saigon"
+                  src="/images/facilities/gym.png"
+                  alt="Fitness area at Haven Saigon"
                   fill
                   className="object-cover"
                   sizes="(min-width: 768px) 50vw, 100vw"
@@ -85,7 +85,7 @@ export default function FacilitiesPage() {
               <div className="relative aspect-4/3 overflow-hidden">
                 <Image
                   src="/images/facilities/coworking.jpg"
-                  alt="Co-working space at HAVEN Saigon"
+                  alt="Co-working space at Haven Saigon"
                   fill
                   className="object-cover object-left"
                   sizes="(min-width: 768px) 50vw, 100vw"
@@ -109,8 +109,8 @@ export default function FacilitiesPage() {
           <div>
             <div className="relative aspect-4/3 overflow-hidden md:aspect-2/1">
               <Image
-                src="/images/facilities/rooftop.jpg"
-                alt="Rooftop terrace at HAVEN Saigon"
+                src="/images/facilities/rooftop.png"
+                alt="Rooftop terrace at Haven Saigon"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1280px) 1216px, 100vw"
