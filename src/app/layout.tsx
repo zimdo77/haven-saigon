@@ -23,6 +23,30 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://havensaigon.com.vn",
+    siteName: "Haven Saigon",
+    title: "Haven Saigon | Serviced Apartments in Thao Dien",
+    description:
+      "Discover fully furnished serviced apartments in Thao Dien, Ho Chi Minh City. Enjoy modern amenities, flexible monthly stays and comfortable living at Haven Saigon.",
+    images: [
+      {
+        url: "/images/home/hero.jpg",
+        alt: "Haven Saigon serviced apartments interior",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Haven Saigon | Serviced Apartments in Thao Dien",
+    description:
+      "Discover fully furnished serviced apartments in Thao Dien, Ho Chi Minh City, with modern amenities and flexible stays.",
+    images: ["/images/home/hero.jpg"],
+  },
 };
 
 const cormorant = Cormorant_Garamond({
