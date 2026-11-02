@@ -58,8 +58,8 @@ export default function Home() {
       {/* ABOUT PREVIEW SECTION */}
       <SectionPreview
         eyebrow="About HAVEN"
-        title="A Calmer Way to Live in Saigon"
-        description="Set in the heart of Thảo Điền, HAVEN offers a peaceful residential setting with the comfort, privacy, and convenience of everyday living close at hand."
+        title="Designed for Comfortable Living"
+        description="Tucked away in Thảo Điền, our serviced apartments offer a peaceful place to settle in, with privacy, convenience, and everything you need for day-to-day living nearby."
         imageSrc="/images/about/about1.jpg"
         imageAlt="HAVEN Saigon serviced apartment interior"
         href="/about"
@@ -75,7 +75,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Our Rooms"
               title="Find a Space That Suits Your Stay"
-              subtitle="Explore our fully furnished apartments, each designed for comfortable everyday living."
+              subtitle="Choose from fully furnished studios, one-bedroom and two-bedroom apartments designed for relaxed, everyday living."
             />
 
             <div className="hidden shrink-0 md:block">
@@ -112,8 +112,8 @@ export default function Home() {
       {/* FACILITIES PREVIEW SECTION */}
       <SectionPreview
         eyebrow="Facilities"
-        title="Everything You Need, Close to Home"
-        description="Enjoy everyday convenience with on-site facilities including a swimming pool, gym, and rooftop terrace."
+        title="Designed Around Daily Life"
+        description="Enjoy everyday convenience with on-site facilities including a swimming pool, gym, co-working space, and rooftop terrace."
         imageSrc="/images/facilities/pool1.jpg"
         imageAlt="Facilities at HAVEN Saigon"
         href="/facilities"
@@ -127,8 +127,8 @@ export default function Home() {
         <Container className="py-16 md:py-20 text-center">
           <SectionHeading
             eyebrow="Get in Touch"
-            title="Make HAVEN Your Home in Saigon"
-            subtitle="Have a question or want to check availability? Get in touch and we’ll help you find the right apartment."
+            title="Thinking About Your Next Stay?"
+            subtitle="Have a question or want to check availability? Get in touch and we’ll help you find a space that suits your needs."
             align="center"
           />
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { Users, Maximize2 } from "lucide-react";
 
 import Container from "@/components/Container";
@@ -64,7 +65,22 @@ export default async function RoomPage({ params }: RoomPageProps) {
               </h2>
 
               <p className="mt-6 max-w-2xl leading-relaxed text-olive/70">
-                {room.description}
+                {room.relatedRoom ? (
+                  <>
+                    {room.description.split(room.relatedRoom.name)[0]}
+
+                    <Link
+                      href={`/rooms/${room.relatedRoom.slug}`}
+                      className="underline underline-offset-2 hover:text-olive"
+                    >
+                      {room.relatedRoom.name}
+                    </Link>
+
+                    {room.description.split(room.relatedRoom.name)[1]}
+                  </>
+                ) : (
+                  room.description
+                )}
               </p>
 
               {/* FEATURES */}

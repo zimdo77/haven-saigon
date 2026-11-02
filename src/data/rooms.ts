@@ -3,6 +3,10 @@ export type Room = {
   name: string;
   roomType: string;
   description: string;
+  relatedRoom?: {
+    name: string;
+    slug: string;
+  };
   size: number;
   guests: number;
   features: string[];
@@ -16,7 +20,7 @@ export const rooms: Room[] = [
     name: "Chamomile",
     roomType: "Studio Apartment",
     description:
-      "This is a placeholder for further descriptions. This is a placeholder for further descriptions.",
+      "A compact studio with a private kitchen, designed for simple and comfortable everyday living.",
     size: 28,
     guests: 2,
     features: ["1 Queen Bed"],
@@ -39,7 +43,7 @@ export const rooms: Room[] = [
     name: "Sencha",
     roomType: "1 Bedroom Apartment",
     description:
-      "This is a placeholder for further descriptions. This is a placeholder for further descriptions.",
+      "Our most compact one-bedroom apartment, with separate living, kitchen and dining areas.",
     size: 32.5,
     guests: 2,
     features: ["1 Queen Bed", "Large Windows"],
@@ -62,7 +66,7 @@ export const rooms: Room[] = [
     name: "Jasmine",
     roomType: "1 Bedroom Apartment",
     description:
-      "This is a placeholder for further descriptions. This is a placeholder for further descriptions.",
+      "A comfortable one-bedroom apartment with a kitchen and dining space, plus a private loggia.",
     size: 36.5,
     guests: 2,
     features: ["1 Queen Bed", "Private Loggia"],
@@ -91,7 +95,7 @@ export const rooms: Room[] = [
     name: "Peppermint",
     roomType: "1 Bedroom Apartment",
     description:
-      "This is a placeholder for further descriptions. This is a placeholder for further descriptions.",
+      "A spacious one-bedroom apartment with a private loggia, kitchen and dining area, and a study space in the bedroom.",
     size: 45,
     guests: 2,
     features: ["1 King Bed", "Large Windows", "Private Loggia", "Study Area"],
@@ -121,7 +125,7 @@ export const rooms: Room[] = [
     name: "Lemongrass",
     roomType: "1 Bedroom Apartment",
     description:
-      "This is a placeholder for further descriptions. This is a placeholder for further descriptions.",
+      "A spacious one-bedroom apartment with a private loggia, kitchen and dining area, and a a study space in the bedroom.",
     size: 38.5,
     guests: 2,
     features: ["1 King Bed", "Large Windows", "Private Loggia", "Study Area"],
@@ -146,8 +150,11 @@ export const rooms: Room[] = [
     slug: "lemongrass-green",
     name: "Lemongrass Green",
     roomType: "1 Bedroom Apartment (with Balcony)",
-    description:
-      "This is a placeholder for further descriptions. This is a placeholder for further descriptions.",
+    description: "A spacious one-bedroom apartment with the same layout as Lemongrass, plus a private balcony.",
+    relatedRoom: {
+      name: "Lemongrass",
+      slug: "lemongrass",
+    },
     size: 45.5,
     guests: 2,
     features: [
@@ -178,7 +185,7 @@ export const rooms: Room[] = [
     name: "Oolong",
     roomType: "2 Bedroom Apartment",
     description:
-      "This is a placeholder for further descriptions. This is a placeholder for further descriptions.",
+      "A spacious two-bedroom apartment with a kitchen and dining space, a private loggia, and study space in the bedroom.",
     size: 53,
     guests: 3,
     features: [
@@ -213,8 +220,11 @@ export const rooms: Room[] = [
     slug: "rose-oolong",
     name: "Rose Oolong",
     roomType: "2 Bedroom Apartment (with Balcony)",
-    description:
-      "This is a placeholder for further descriptions. This is a placeholder for further descriptions.",
+    description: "A spacious two-bedroom apartment with the same layout as Oolong, plus a private balcony.",
+    relatedRoom: {
+      name: "Oolong",
+      slug: "oolong",
+    },
     size: 58.3,
     guests: 3,
     features: [

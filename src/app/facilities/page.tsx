@@ -10,7 +10,7 @@ export default function FacilitiesPage() {
       {/* HERO */}
       <PageHero
         title="Facilities"
-        subtitle="Thoughtful amenities designed to make everyday living comfortable and convenient."
+        subtitle="Convenient spaces for everyday use."
         imageSrc="/images/facilities/pool2.jpg"
         imageAlt="Facilities at HAVEN Saigon"
         priority
@@ -20,9 +20,9 @@ export default function FacilitiesPage() {
       <section className="pt-14 pb-10 sm:pt-16 sm:pb-12 md:pt-20 md:pb-16">
         <Container>
           <SectionHeading
-            eyebrow="At HAVEN"
-            title="Everything you need, close to home"
-            subtitle="Spaces to relax, work and stay active — all designed to make everyday living at HAVEN more comfortable."
+            eyebrow="Facilities"
+            title="Designed Around Daily Life"
+            subtitle="Shared spaces for relaxing, working, and staying active throughout your stay."
           />
         </Container>
       </section>
@@ -48,8 +48,8 @@ export default function FacilitiesPage() {
               </h2>
 
               <p className="mt-3 leading-relaxed text-olive/75">
-                A relaxing shared space to cool off, unwind and enjoy a quiet
-                moment during your stay.
+                A quiet place to cool off, unwind, or spend some time outdoors
+                during the day.
               </p>
             </div>
           </div>
@@ -74,8 +74,8 @@ export default function FacilitiesPage() {
                 </h2>
 
                 <p className="mt-3 max-w-xl leading-relaxed text-olive/75">
-                  Keep up with your routine with convenient fitness facilities
-                  available right at HAVEN.
+                  Keep up with your workout routine without having to leave the
+                  building.
                 </p>
               </div>
             </article>
@@ -123,8 +123,8 @@ export default function FacilitiesPage() {
               </h2>
 
               <p className="mt-3 leading-relaxed text-olive/75">
-                An open-air space to relax, take in the surroundings and enjoy a
-                change of scenery above the city.
+                An open-air space to relax, enjoy the surroundings, or make use
+                of the BBQ area.
               </p>
             </div>
           </div>
