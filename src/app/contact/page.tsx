@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -7,6 +8,15 @@ import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import ContactForm from "@/components/ContactForm";
 
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Contact Haven Saigon serviced apartments in Thao Dien, Ho Chi Minh City. Enquire about apartment availability, monthly rentals and long-term stays, or get in touch with our team.",
+  alternates: {
+    canonical: "/contact",
+  },
+};
+
 export default function ContactPage() {
   return (
     <>
@@ -15,7 +25,7 @@ export default function ContactPage() {
         title="Contact Us"
         subtitle="Get in touch with us about availability, longer stays or anything else we can help with."
         imageSrc="/images/contact/hero.jpg"
-        imageAlt="HAVEN Saigon serviced apartments"
+        imageAlt="Haven Saigon serviced apartment interior"
         priority
       />
 
@@ -39,7 +49,7 @@ export default function ContactPage() {
 
             {/* CONTACT DETAILS */}
             <div>
-              <h2 className="font-serif text-2xl sm:text-3xl">Contact HAVEN</h2>
+              <h2 className="font-serif text-2xl sm:text-3xl">Reach out directly</h2>
 
               <p className="mt-4 max-w-md leading-relaxed text-olive/70">
                 Prefer to contact us directly? Reach out by phone, email or

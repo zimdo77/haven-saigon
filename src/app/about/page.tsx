@@ -1,9 +1,19 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import ButtonLink from "@/components/ButtonLink";
 import PageHero from "@/components/PageHero";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about Haven Saigon, our fully serviced apartments in Thao Dien, Ho Chi Minh City. Enjoy a peaceful residential setting, on-site management, housekeeping and flexible stays.",
+  alternates: {
+    canonical: "/about",
+  },
+};
 
 export default function AboutPage() {
   return (
@@ -13,7 +23,7 @@ export default function AboutPage() {
         title="About Us"
         subtitle="Comfortable and convenient living in Saigon."
         imageSrc="/images/about/about2.jpg"
-        imageAlt="HAVEN Saigon serviced apartments"
+        imageAlt="Haven Saigon serviced apartment interior 1"
         priority
       />
 
@@ -24,7 +34,7 @@ export default function AboutPage() {
             <div className="relative aspect-4/3 overflow-hidden">
               <Image
                 src="/images/about/about1.jpg"
-                alt="Interior of HAVEN Saigon"
+                alt="Haven Saigon serviced apartment interior 2"
                 fill
                 className="object-cover"
                 sizes="(min-width: 768px) 50vw, 100vw"
@@ -115,7 +125,7 @@ export default function AboutPage() {
             <div className="relative aspect-4/3 overflow-hidden order-1 md:order-2">
               <Image
                 src="/images/about/about3.jpg"
-                alt="Comfortable living at HAVEN Saigon"
+                alt="Haven Saigon serviced apartment interior 3"
                 fill
                 className="object-cover"
                 sizes="(min-width: 768px) 50vw, 100vw"

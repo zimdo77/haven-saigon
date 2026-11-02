@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -13,6 +14,26 @@ type RoomPageProps = {
     slug: string;
   }>;
 };
+
+export async function generateMetadata({
+  params,
+}: RoomPageProps): Promise<Metadata> {
+  const { slug } = await params;
+
+  const room = rooms.find((room) => room.slug === slug);
+
+  if (!room) {
+    notFound();
+  }
+
+  return {
+    title: `${room.name} | ${room.roomType}`,
+    description: `Explore ${room.name}, a ${room.roomType.toLowerCase()} at Haven Saigon in Thao Dien, Ho Chi Minh City. ${room.size} m², accommodating up to ${room.guests} guests. Discover its features and amenities.`,
+    alternates: {
+      canonical: `/rooms/${room.slug}`,
+    },
+  };
+}
 
 export default async function RoomPage({ params }: RoomPageProps) {
   const { slug } = await params;

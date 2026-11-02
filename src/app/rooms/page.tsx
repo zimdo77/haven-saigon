@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import {
   AirVent,
   Bath,
@@ -18,6 +20,15 @@ import RoomCard from "@/components/RoomCard";
 import SectionHeading from "@/components/SectionHeading";
 
 import { rooms } from "@/data/rooms";
+
+export const metadata: Metadata = {
+  title: "Rooms & Apartments",
+  description:
+    "Explore fully furnished studios, one-bedroom and two-bedroom serviced apartments at Haven Saigon in Thao Dien, Ho Chi Minh City. Discover comfortable spaces with modern amenities and on-site services.",
+  alternates: {
+    canonical: "/rooms",
+  },
+};
 
 const apartmentFeatures = [
   { label: "Fridge", icon: Refrigerator },
@@ -44,7 +55,7 @@ export default function RoomsPage() {
         title="Rooms & Services"
         subtitle="Comfortable spaces for everyday living."
         imageSrc="/images/rooms/hero1.jpg"
-        imageAlt="HAVEN Saigon serviced apartments"
+        imageAlt="Haven Saigon serviced apartment interior 1"
         priority
       />
 

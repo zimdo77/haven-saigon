@@ -1,5 +1,20 @@
+import type { Metadata } from "next";
+
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
+
+export const metadata: Metadata = {
+  title: "Photo Gallery",
+  description:
+    "Explore photos of Haven Saigon's serviced apartments, facilities and shared spaces in Thao Dien, Ho Chi Minh City.",
+  alternates: {
+    canonical: "/gallery",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
 
 export default function GalleryPage() {
   return (
@@ -8,7 +23,7 @@ export default function GalleryPage() {
         title="Photo Gallery"
         subtitle="A closer look at the spaces and surroundings of HAVEN Saigon."
         imageSrc="/images/gallery/hero1.jpg"
-        imageAlt="HAVEN Saigon"
+        imageAlt="Haven Saigon serviced apartment interior"
         priority
       />
 

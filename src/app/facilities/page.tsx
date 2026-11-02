@@ -1,8 +1,18 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
+
+export const metadata: Metadata = {
+  title: "Facilities & Amenities",
+  description:
+    "Explore the facilities at Haven Saigon serviced apartments in Thao Dien, Ho Chi Minh City, including a swimming pool, fitness area, co-working space and rooftop BBQ terrace.",
+  alternates: {
+    canonical: "/facilities",
+  },
+};
 
 export default function FacilitiesPage() {
   return (
@@ -12,7 +22,7 @@ export default function FacilitiesPage() {
         title="Facilities"
         subtitle="Convenient spaces for everyday use."
         imageSrc="/images/facilities/pool.png"
-        imageAlt="Facilities at Haven Saigon"
+        imageAlt="Swimming pool at Haven Saigon"
         priority
       />
 
@@ -61,7 +71,7 @@ export default function FacilitiesPage() {
               <div className="relative aspect-4/3 overflow-hidden">
                 <Image
                   src="/images/facilities/gym.png"
-                  alt="Fitness area at Haven Saigon"
+                  alt="Gym area at Haven Saigon"
                   fill
                   className="object-cover"
                   sizes="(min-width: 768px) 50vw, 100vw"

@@ -7,8 +7,22 @@ import Footer from "@/components/Footer";
 import FloatingContactLinks from "@/components/FloatingContactLinks";
 
 export const metadata: Metadata = {
-  title: "HAVEN Saigon",
-  description: "Serviced apartments in Ho Chi Minh City",
+  metadataBase: new URL("https://havensaigon.com.vn"),
+
+  title: {
+    default: "Haven Saigon | Serviced Apartments in Thao Dien",
+    template: "%s | Haven Saigon",
+  },
+
+  description:
+    "Discover fully furnished serviced apartments in Thao Dien, Ho Chi Minh City. Comfortable studios, one- and two-bedroom apartments with modern facilities and flexible stays.",
+
+  applicationName: "Haven Saigon",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const cormorant = Cormorant_Garamond({

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 import ButtonLink from "@/components/ButtonLink";
 import Container from "@/components/Container";
@@ -6,6 +7,17 @@ import SectionPreview from "@/components/SectionPreview";
 import RoomCard from "@/components/RoomCard";
 import { rooms } from "@/data/rooms";
 import SectionHeading from "@/components/SectionHeading";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Haven Saigon | Serviced Apartments in Thao Dien",
+  },
+  description:
+    "Discover fully furnished serviced apartments in Thao Dien, Ho Chi Minh City. Enjoy modern amenities, flexible monthly stays and comfortable living at Haven Saigon.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 // Displays exactly in order
 const featuredRoomSlugs = ["chamomile", "peppermint", "rose-oolong"];
@@ -21,7 +33,7 @@ export default function Home() {
       <section className="relative min-h-[65vh] overflow-hidden sm:min-h-[70vh] md:min-h-[80vh]">
         <Image
           src="/images/home/hero.jpg"
-          alt="HAVEN Saigon serviced apartment"
+          alt="Haven Saigon serviced apartment interior 1"
           fill
           priority
           className="object-cover object-[0%_center]"
@@ -61,7 +73,7 @@ export default function Home() {
         title="Designed for Comfortable Living"
         description="Tucked away in Thảo Điền, our serviced apartments offer a peaceful place to settle in, with privacy, convenience, and everything you need for day-to-day living nearby."
         imageSrc="/images/about/about1.jpg"
-        imageAlt="HAVEN Saigon serviced apartment interior"
+        imageAlt="Haven Saigon serviced apartment interior 2"
         href="/about"
         linkText="Learn More"
         eager
@@ -114,8 +126,8 @@ export default function Home() {
         eyebrow="Facilities"
         title="Designed Around Daily Life"
         description="Enjoy everyday convenience with on-site facilities including a swimming pool, gym, co-working space, and rooftop terrace."
-        imageSrc="/images/facilities/pool1.jpg"
-        imageAlt="Facilities at HAVEN Saigon"
+        imageSrc="/images/facilities/pool.png"
+        imageAlt="Swimming pool at Haven Saigon"
         href="/facilities"
         linkText="Explore Facilities"
         imagePosition="right"
