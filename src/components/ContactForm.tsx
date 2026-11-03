@@ -11,7 +11,7 @@ export default function ContactForm() {
       <div
         role="status"
         aria-live="polite"
-        className="mt-6 flex min-h-[420px] items-center justify-center px-6 py-12 text-center"
+        className="mt-6 flex min-h-105 items-center justify-center px-6 py-12 text-center"
       >
         <div className="max-w-sm">
           <div className="mx-auto flex size-12 items-center justify-center rounded-full border border-olive/30">

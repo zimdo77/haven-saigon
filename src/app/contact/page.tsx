@@ -154,7 +154,7 @@ export default function ContactPage() {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0687133566194!2d106.73284799999999!3d10.8060493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527962cc57533%3A0xbfc19027fd4c9f7e!2sHaven%20Saigon%20-%20Thao%20Dien%20Serviced%20Apartment!5e0!3m2!1sen!2sau!4v1787138003040!5m2!1sen!2sau"
               title="HAVEN Saigon location"
-              className="h-[300px] w-full border-0 sm:h-[350px] md:h-[400px] lg:h-[450px]"
+              className="h-75 w-full border-0 sm:h-87.5 md:h-100 lg:h-112.5"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />

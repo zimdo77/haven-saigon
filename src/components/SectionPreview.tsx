@@ -30,7 +30,7 @@ export default function SectionPreview({
   background = "cream",
 }: SectionPreviewProps) {
   const image = (
-    <div className="relative aspect-4/3 overflow-hidden md:aspect-[5/4]">
+    <div className="relative aspect-4/3 overflow-hidden md:aspect-5/4">
       <Image
         src={imageSrc}
         alt={imageAlt}
