@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 
+import BusinessJsonLd from "@/components/BusinessJsonLd";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingContactLinks from "@/components/FloatingContactLinks";
@@ -67,6 +68,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col">
+        <BusinessJsonLd />
+
         <Navbar />
 
         <main className="flex-1">{children}</main>
