@@ -199,4 +199,51 @@ export const rooms: Room[] = [
     ],
     floorplans: ["/images/rooms/rose-oolong/fp.jpg"],
   },
+  {
+    slug: "hojicha",
+    name: "Hojicha",
+    roomType: "1 Bedroom Penthouse Apartment",
+    description:
+      "A spacious one-bedroom penthouse with a generous living area, kitchen and dining space, and a private balcony.",
+    size: 100,
+    guests: 2,
+    features: [
+      "1 King Bed",
+      "Large Windows",
+      "Balcony",
+      "Spacious Living Area",
+    ],
+    images: [
+      // FEATURE PHOTO
+      "/images/rooms/hojicha/3.png",
+
+      "/images/rooms/hojicha/2.png",
+      "/images/rooms/hojicha/1.png",
+      "/images/rooms/hojicha/4.png",
+      "/images/rooms/hojicha/5.png",
+    ],
+    floorplans: ["/images/rooms/hojicha/fp.jpg"],
+  },
+  {
+    slug: "matcha",
+    name: "Matcha",
+    roomType: "2 Bedroom Penthouse Apartment",
+    description:
+      "A spacious two-bedroom penthouse with generous living and dining areas.",
+    size: 166,
+    guests: 4,
+    features: ["2 King Beds", "Large Windows", "Spacious Living Area"],
+    images: [
+      // FEATURE PHOTO
+      "/images/rooms/matcha/2.png",
+
+      "/images/rooms/matcha/1.png",
+      "/images/rooms/matcha/3.png",
+      "/images/rooms/matcha/4.png",
+      "/images/rooms/matcha/5.png",
+      "/images/rooms/matcha/6.png",
+      "/images/rooms/matcha/8.png",
+    ],
+    floorplans: ["/images/rooms/matcha/fp.jpg"],
+  },
 ];
