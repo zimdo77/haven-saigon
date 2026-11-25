@@ -212,6 +212,7 @@ export const rooms: Room[] = [
       "Large Windows",
       "Balcony",
       "Spacious Living Area",
+      "Dishwasher",
     ],
     images: [
       // FEATURE PHOTO
@@ -229,10 +230,16 @@ export const rooms: Room[] = [
     name: "Matcha",
     roomType: "2 Bedroom Penthouse Apartment",
     description:
-      "A spacious two-bedroom penthouse with generous living and dining areas.",
+      "A spacious two-bedroom penthouse with generous living and dining areas, and a designated laundry area.",
     size: 166,
     guests: 4,
-    features: ["2 King Beds", "Large Windows", "Spacious Living Area"],
+    features: [
+      "2 King Beds",
+      "Large Windows",
+      "Spacious Living Area",
+      "Laundry Area",
+      "Dishwasher",
+    ],
     images: [
       // FEATURE PHOTO
       "/images/rooms/matcha/2.png",
@@ -243,6 +250,7 @@ export const rooms: Room[] = [
       "/images/rooms/matcha/5.png",
       "/images/rooms/matcha/6.png",
       "/images/rooms/matcha/8.png",
+      "/images/rooms/matcha/9.png",
     ],
     floorplans: ["/images/rooms/matcha/fp.jpg"],
   },
